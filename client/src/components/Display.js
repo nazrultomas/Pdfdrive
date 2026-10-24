@@ -23,7 +23,7 @@ const Display = ({ contract, account }) => {
       
       const files = str_array.map((item, i) => {
         return (
-          <a href={item} key={i} target="_blank">
+          <a href={item}  target="_blank" rel="noreferrer"  >
             <object
   key={i}
   data={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`}
